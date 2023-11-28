@@ -1,0 +1,243 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Gilroy';
+    background: var(--BG, #0B1D26);
+    box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.20);
+}
+
+.nav {
+    background: url(../img/MG.jpg) no-repeat center center / cover;
+    min-height: 1200px;
+    margin-left: -125px;
+    // background: #0000006c;
+
+    &__all {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px 80px 0 180px;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__link {
+        color: #000;
+        font-family: 'Gilroy';
+        font-size: 18px;
+        font-weight: 700;
+        margin-right: 40px;
+    }
+
+    &__account {
+        display: flex;
+        align-items: center;
+    }
+
+    &__account-title {
+        font-family: 'Gilroy';
+        font-size: 18px;
+        font-weight: 700;
+        color: #000;
+    }
+}
+
+.header {
+    position: relative;
+    background: url(../img/vg.png) no-repeat center center / cover;
+    min-height: 926px;
+    width: 100%;
+    margin-top: -630px;
+
+    &__titles {
+        position: absolute;
+        top: -400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        color: #FBD784;
+        font-family: 'Gilroy';
+        font-weight: 800;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    &__txt {
+        font-size: 88px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    &__line {
+        width: 72px;
+        height: 2px;
+        background: #FBD784;
+        margin-right: 5px;
+    }
+
+    &__first {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.section {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 200px;
+    }
+
+    &__titles {
+        width: 632px;
+    }
+
+    &__first {
+        display: flex;
+        align-items: center;
+    }
+
+    &__line {
+        position: relative;
+        width: 72px;
+        height: 2px;
+        background: #FBD784;
+        margin-right: 20px;
+
+        &::before {
+            content: '01';
+            position: absolute;
+            font-size: 240px;
+            font-weight: 700;
+            color: #fff;
+            opacity: 0.1;
+            top: -153px;
+            left: -73px;
+        }
+    }
+
+    &__first-title {
+        color: #FBD784;
+        font-family: 'Gilroy';
+        font-weight: 800;
+        font-size: 18px;
+        text-transform: uppercase;
+
+    }
+
+    &__next-line {
+        position: relative;
+
+        &::before {
+            content: '02';
+            position: absolute;
+        }
+    }
+
+    &__last-line {
+        position: relative;
+
+        &::before {
+            content: '03';
+            position: absolute;
+            top: -162px;
+        }
+    }
+
+    &__title {
+        color: #fff;
+        font-weight: 600;
+        font-size: 64px;
+    }
+
+    &__txt {
+        color: #fff;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 32px;
+        margin-top: 25px;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+    }
+
+    &__button-img {
+        margin-bottom: -23px;
+    }
+
+    &__btn {
+        font-weight: 700;
+        font-size: 18px;
+        color: #FBD784;
+        margin-right: 15px;
+        margin-top: 20px;
+    }
+
+    &__img {
+        max-width: 475px;
+        height: 555px;
+        width: 100%;
+    }
+}
+
+.footer {
+    padding-bottom: 100px;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__second-title {
+        color: #FBD784;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+
+    &__link {
+        color: #FFF;
+        font-family: 'Gilroy';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        display: inline-block;
+        margin-bottom: 16px;
+    }
+    &__first-title {
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 24px;
+    }
+    &__last {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        opacity: 0.5;
+        margin-top: 120px;
+    }
+}
